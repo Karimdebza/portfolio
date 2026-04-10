@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+
+  .logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    color: var(--accent);
+    span { color: var(--text-primary); }
+  }
+
+  nav {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+      cursor: pointer;
+
+      &:hover { color: var(--accent); }
+    }
+  }
+
+  .cta {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--accent);
+      color: white;
+    }
+  }
+}

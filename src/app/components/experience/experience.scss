@@ -1,0 +1,129 @@
+.experience {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .section-title {
+    font-family: 'Fira Code', monospace;
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .item {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+
+    .line {
+      position: absolute;
+      left: 9px;
+      top: 20px;
+      width: 2px;
+      height: 100%;
+      background: var(--border);
+
+      &.last { display: none; }
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--bg-primary);
+      box-shadow: 0 0 12px var(--accent-glow);
+      margin-top: 4px;
+      z-index: 1;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex: 1;
+      transition: border-color 0.2s;
+
+      &:hover { border-color: var(--accent); }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        .company {
+          font-size: 0.85rem;
+          color: var(--accent);
+          display: block;
+          margin-top: 0.2rem;
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 0.4rem;
+        }
+
+        .period {
+          font-size: 0.8rem;
+          color: var(--text-muted);
+          font-family: 'Fira Code', monospace;
+        }
+
+        .badge {
+          padding: 0.2rem 0.7rem;
+          background: rgba(108, 99, 255, 0.1);
+          border: 1px solid rgba(108, 99, 255, 0.2);
+          border-radius: 20px;
+          font-size: 0.72rem;
+          color: var(--accent);
+        }
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+          font-size: 0.875rem;
+          color: var(--text-secondary);
+          padding-left: 1rem;
+          position: relative;
+
+          &::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}

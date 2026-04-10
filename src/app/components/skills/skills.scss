@@ -1,0 +1,53 @@
+.skills {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .section-title {
+    font-family: 'Fira Code', monospace;
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.2s;
+
+    &:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px var(--accent-glow);
+    }
+
+    .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .name { font-size: 0.85rem; color: var(--text-secondary); }
+  }
+    i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .name {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+}

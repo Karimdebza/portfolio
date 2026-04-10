@@ -1,0 +1,94 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+
+    .greeting {
+      font-family: 'Fira Code', monospace;
+      color: var(--accent);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+
+      span {
+        background: linear-gradient(135deg, var(--accent), #a78bfa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .btn-primary {
+        padding: 0.8rem 2rem;
+        background: var(--accent);
+        color: white;
+        border-radius: var(--radius);
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          background: var(--accent-hover);
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px var(--accent-glow);
+        }
+      }
+
+      .btn-outline {
+        padding: 0.8rem 2rem;
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+        border-radius: var(--radius);
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          border-color: var(--accent);
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}

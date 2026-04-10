@@ -1,1 +1,10 @@
-<p>skills works!</p>
+<section class="skills" id="skills">
+  <p class="section-title">// ce que je maîtrise</p>
+  <h2>Ma Stack Technique</h2>
+  <div class="grid">
+    <div class="skill-card" *ngFor="let skill of skills">
+      <i [class]="skill.icon + ' colored'"></i>
+      <div class="name">{{ skill.name }}</div>
+    </div>
+  </div>
+</section>

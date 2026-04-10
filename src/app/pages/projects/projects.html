@@ -1,1 +1,20 @@
-<p>projects works!</p>
+<section class="projects" id="projects">
+  <p class="section-title">// ce que j'ai construit</p>
+  <h2>Mes Projets</h2>
+  <div class="grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="card-header">
+        <span class="icon">{{ project.icon }}</span>
+        <div class="links">
+          <a *ngIf="project.github" [href]="project.github" target="_blank">🐙</a>
+          <a *ngIf="project.live" [href]="project.live" target="_blank">🔗</a>
+        </div>
+      </div>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+      <div class="tags">
+        <span *ngFor="let tag of project.tags">{{ tag }}</span>
+      </div>
+    </div>
+  </div>
+</section>

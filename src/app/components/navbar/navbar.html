@@ -1,1 +1,11 @@
-<p>navbar works!</p>
+<header class="navbar">
+  <div class="logo">&lt;<span>dev</span>/&gt;</div>
+  <nav>
+    <a (click)="scrollTo('about')">À propos</a>
+    <a (click)="scrollTo('skills')">Stack</a>
+    <a (click)="scrollTo('experience')">Expérience</a>
+    <a (click)="scrollTo('projects')">Projets</a>
+    <a (click)="scrollTo('contact')">Contact</a>
+  </nav>
+  <button class="cta" (click)="scrollTo('contact')">Me contacter</button>
+</header>

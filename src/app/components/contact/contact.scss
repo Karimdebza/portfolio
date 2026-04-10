@@ -1,0 +1,60 @@
+.contact {
+  padding: 6rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  .section-title {
+    font-family: 'Fira Code', monospace;
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      padding: 0.8rem 1.8rem;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &.email {
+        background: var(--accent);
+        color: white;
+        &:hover { background: var(--accent-hover); transform: translateY(-2px); }
+      }
+
+      &.github {
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+        &:hover { border-color: var(--accent); color: var(--accent); }
+      }
+
+      &.linkedin {
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+        &:hover { border-color: #0077b5; color: #0077b5; }
+      }
+    }
+  }
+}

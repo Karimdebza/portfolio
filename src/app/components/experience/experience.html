@@ -1,0 +1,27 @@
+<section class="experience" id="experience">
+  <p class="section-title">// mon parcours</p>
+  <h2>Expériences</h2>
+
+  <div class="timeline">
+    <div class="item" *ngFor="let exp of experiences; let last = last">
+      <div class="line" [class.last]="last"></div>
+      <div class="dot"></div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>{{ exp.role }}</h3>
+            <span class="company">{{ exp.company }}</span>
+            <span class="location">{{ exp.location }}</span>
+          </div>
+          <div class="right">
+            <span class="period">{{ exp.period }}</span>
+            <span class="badge">{{ exp.type }}</span>
+          </div>
+        </div>
+        <ul>
+          <li *ngFor="let point of exp.description">{{ point }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
