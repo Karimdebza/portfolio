@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "greeting": "// Hi, I'm",
+    "subtitle": "Full-stack developer, studying Advanced Software Engineering, currently on a work-study program.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Contact me"
+  },
+  "about": {
+    "subtitle": "// who am I",
+    "title": "About Me",
+    "p1": "Full-stack developer in a Software Engineering Master's, specialized in building end-to-end applications — from backend architecture to production deployment.",
+    "p2": "Passionate about machine learning applied to real problems: signal detection in NASA data, time series prediction, data pipelines. I use AI as an execution lever, not a crutch.",
+    "stat_exp": "Years of experience",
+    "stat_projects": "Projects delivered",
+    "stat_techs": "Technologies mastered",
+    "stat_passion": "Passion"
+  },
+  "skills": {
+    "subtitle": "// what I master",
+    "title": "My Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ml": "Machine Learning",
+    "devops": "Data & DevOps"
+  },
+  "projects": {
+    "subtitle": "// what I've built",
+    "title": "My Projects"
+  },
+  "contact": {
+    "subtitle": "// let's work together",
+    "title": "Contact Me",
+    "desc": "Available for work-study or permanent positions. Feel free to reach out.",
+    "copied": "Email copied!"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Contact me",
+    "lang": "FR"
+  }
+}

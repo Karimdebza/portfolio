@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss']
 })
 export class Projects {
   projects = [
+    {
+      icon: '🔭',
+      title: 'ExoplanetHunter',
+      description: 'Pipeline ML de détection d\'exoplanètes dans les données NASA Kepler. Architecture en 5 couches : ingestion → BLS → CNN (val_auc 0.846) → validation physique → API async. Déployé sur Render + Vercel.',
+      tags: ['Angular 18', 'Python', 'FastAPI', 'TensorFlow', 'RxJS'],
+      github: 'https://github.com/Karimdebza/exoplanet_hunter',
+      live: 'https://exoplanet-hunter-two.vercel.app/results'
+    },
     {
       icon: '📈',
       title: 'FX Predictor Dashboard',
@@ -20,11 +29,11 @@ export class Projects {
     },
     {
       icon: '☀️',
-      title: 'SolarCast — En cours',
+      title: 'SolarCast ',
       description: 'Application de prévision de production solaire basée sur les données météo. Optimisation énergétique pour particuliers et entreprises.',
-      tags: ['Angular', 'Node.js', 'Weather API', 'PostgreSQL'],
-      github: null,
-      live: null
+      tags: ['Angular', 'python', 'Weather API', 'redis'],
+      github: 'https://github.com/Karimdebza/solarcast',
+      live: 'https://solarcast-nine.vercel.app/'
     }
   ];
 }

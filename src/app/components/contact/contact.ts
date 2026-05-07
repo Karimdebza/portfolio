@@ -9,4 +9,13 @@ import { CommonModule } from '@angular/common';
 })
 export class Contact {
 
+  emailCopied = false;
+
+copyEmail(): void {
+  navigator.clipboard.writeText('debzakarim10@gmail.com').then(() => {
+    this.emailCopied = true;
+    setTimeout(() => this.emailCopied = false, 2000);
+  });
+}
+
 }

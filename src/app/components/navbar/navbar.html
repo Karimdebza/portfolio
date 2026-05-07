@@ -1,11 +1,22 @@
 <header class="navbar">
+
   <div class="logo">&lt;<span>dev</span>/&gt;</div>
+
   <nav>
-    <a (click)="scrollTo('about')">À propos</a>
-    <a (click)="scrollTo('skills')">Stack</a>
-    <a (click)="scrollTo('experience')">Expérience</a>
-    <a (click)="scrollTo('projects')">Projets</a>
-    <a (click)="scrollTo('contact')">Contact</a>
+    <a (click)="scrollTo('about')">{{ 'nav.about' | translate }}</a>
+    <a (click)="scrollTo('skills')">{{ 'nav.skills' | translate }}</a>
+    <a (click)="scrollTo('experience')">{{ 'nav.experience' | translate }}</a>
+    <a (click)="scrollTo('projects')">{{ 'nav.projects' | translate }}</a>
+    <a (click)="scrollTo('contact')">{{ 'nav.contact' | translate }}</a>
   </nav>
-  <button class="cta" (click)="scrollTo('contact')">Me contacter</button>
+
+  <div class="navbar-actions">
+    <button class="lang-switch" (click)="langService.toggle()">
+      {{ langService.currentLang === 'fr' ? 'EN' : 'FR' }}
+    </button>
+    <button class="cta" (click)="scrollTo('contact')">
+      {{ 'nav.cta' | translate }}
+    </button>
+  </div>
+
 </header>
