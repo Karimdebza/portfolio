@@ -1,38 +1,40 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experience',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './experience.html',
   styleUrls: ['./experience.scss']
 })
 export class Experience {
   experiences = [
     {
-      role: 'Développeur Fullstack — Alternance',
+      role: 'experience.scipline.role',
       company: 'Scipline',
-      period: '2025 — Présent',
-      type: 'Alternance',
-      location: 'angoulême, France',
+      period: '2025 — ' + ('experience.present'),
+      periodKey: 'experience.scipline.period',
+      type: 'experience.type_alternance',
+      location: 'Angoulême, France',
       description: [
-    "      Rôle clé en collaboration directe avec le lead developer\
-      Maintenance d’un ERP commercial (Flask, PHP, JavaScript vanilla)\
-      Participation à la refonte de l’ERP (Python, JavaScript)\
-      Adaptation aux besoins clients et compréhension de la logique métier\
-      Transformation de processus métiers en code (ex : système de trésorerie Excel)"
+        'experience.scipline.d1',
+        'experience.scipline.d2',
+        'experience.scipline.d3',
+        'experience.scipline.d4',
+        'experience.scipline.d5',
       ]
     },
     {
-      role: 'Développeur — Alternance',
+      role: 'experience.compufirst.role',
       company: 'Compufirst',
-      period: '2024 — 2025',
+      periodKey: 'experience.compufirst.period',
+      type: 'experience.type_alternance',
       location: 'Montpellier, France',
-      type: 'Alternance',
       description: [
-      "Collaboration avec les pôles commercial et marketing \
-      Adaptation du CRM selon les besoins métiers\
-      Participation à la refonte du CRM (anciennement en Java 8)"
+        'experience.compufirst.d1',
+        'experience.compufirst.d2',
+        'experience.compufirst.d3',
       ]
     }
   ];

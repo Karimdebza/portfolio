@@ -5,16 +5,17 @@
     "cta_projects": "View my projects",
     "cta_contact": "Contact me"
   },
-  "about": {
-    "subtitle": "// who am I",
-    "title": "About Me",
-    "p1": "Full-stack developer in a Software Engineering Master's, specialized in building end-to-end applications — from backend architecture to production deployment.",
-    "p2": "Passionate about machine learning applied to real problems: signal detection in NASA data, time series prediction, data pipelines. I use AI as an execution lever, not a crutch.",
-    "stat_exp": "Years of experience",
-    "stat_projects": "Projects delivered",
-    "stat_techs": "Technologies mastered",
-    "stat_passion": "Passion"
-  },
+  
+"about": {
+  "subtitle": "// who am I",
+  "title": "About Me",
+  "p1": "Full-stack developer in a Software Engineering Master's, specialized in building end-to-end applications — from backend architecture to production deployment.",
+  "p2": "Passionate about machine learning applied to real problems: signal detection in NASA data, time series prediction, data pipelines.",
+  "stat_exp": "Years of experience",
+  "stat_projects": "Projects delivered",
+  "stat_techs": "Technologies mastered",
+  "stat_passion": "Passion"
+},
   "skills": {
     "subtitle": "// what I master",
     "title": "My Tech Stack",
@@ -41,5 +42,32 @@
     "contact": "Contact",
     "cta": "Contact me",
     "lang": "FR"
-  }
+  },
+  
+  "experience": {
+    "subtitle": "// my journey",
+    "title": "Experience",
+    "present": "Present",
+    "type_alternance": "Work-study",
+ 
+    "scipline": {
+      "role": "Fullstack Developer",
+      "period": "2025 — Present",
+      "d1": "Key role in direct collaboration with the lead developer",
+      "d2": "Maintenance of a commercial ERP (Flask, PHP, JavaScript)",
+      "d3": "Participation in ERP redesign (Python, JavaScript)",
+      "d4": "Adapting to client needs and understanding business logic",
+      "d5": "Transforming business processes into code (e.g. treasury system)"
+    },
+ 
+    "compufirst": {
+      "role": "software Developer",
+      "period": "2024 — 2025",
+      "d1": "Collaboration with sales and marketing teams",
+      "d2": "CRM adaptation based on business needs",
+      "d3": "Participation in CRM redesign (formerly Java 8)"
+    }
+  
+}
+
 }

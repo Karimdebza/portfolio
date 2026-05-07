@@ -1,6 +1,6 @@
 <section class="experience" id="experience">
-  <p class="section-title">// mon parcours</p>
-  <h2>Expériences</h2>
+  <p class="section-title">{{ 'experience.subtitle' | translate }}</p>
+  <h2>{{ 'experience.title' | translate }}</h2>
 
   <div class="timeline">
     <div class="item" *ngFor="let exp of experiences; let last = last">
@@ -8,18 +8,20 @@
       <div class="dot"></div>
       <div class="card">
         <div class="card-header">
-          <div>
-            <h3>{{ exp.role }}</h3>
+          <div class="card-info">
+            <h3>{{ exp.role | translate }}</h3>
             <span class="company">{{ exp.company }}</span>
             <span class="location">{{ exp.location }}</span>
           </div>
           <div class="right">
-            <span class="period">{{ exp.period }}</span>
-            <span class="badge">{{ exp.type }}</span>
+            <span class="period">{{ exp.periodKey | translate }}</span>
+            <span class="badge">{{ exp.type | translate }}</span>
           </div>
         </div>
         <ul>
-          <li *ngFor="let point of exp.description">{{ point }}</li>
+          <li *ngFor="let point of exp.description">
+            {{ point | translate }}
+          </li>
         </ul>
       </div>
     </div>

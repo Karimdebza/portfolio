@@ -5,16 +5,16 @@
     "cta_projects": "Voir mes projets",
     "cta_contact": "Me contacter"
   },
-  "about": {
-    "subtitle": "// qui suis-je",
-    "title": "À Propos de Moi",
-    "p1": "Développeur full-stack en Mastère Ingénierie Logicielle, spécialisé dans la conception d'applications de bout en bout — de l'architecture backend au déploiement en production.",
-    "p2": "Passionné par le machine learning appliqué à des problèmes réels : détection de signaux dans des données NASA, prédiction de séries temporelles, pipelines de données. J'utilise l'IA comme levier d'exécution, pas comme béquille.",
-    "stat_exp": "Ans d'expérience",
-    "stat_projects": "Projets livrés",
-    "stat_techs": "Technos maîtrisées",
-    "stat_passion": "Passion"
-  },
+"about": {
+  "subtitle": "// qui suis-je",
+  "title": "À Propos de Moi",
+  "p1": "Développeur full-stack en Mastère Ingénierie Logicielle, spécialisé dans la conception d'applications de bout en bout — de l'architecture backend au déploiement en production.",
+  "p2": "Passionné par le machine learning appliqué à des problèmes réels : détection de signaux dans des données NASA, prédiction de séries temporelles, pipelines de données.",
+  "stat_exp": "Ans d'expérience",
+  "stat_projects": "Projets livrés",
+  "stat_techs": "Technos maîtrisées",
+  "stat_passion": "Passion"
+},
   "skills": {
     "subtitle": "// ce que je maîtrise",
     "title": "Ma Stack Technique",
@@ -42,4 +42,30 @@
     "cta": "Me contacter",
     "lang": "EN"
   }
+  ,
+  "experience": {
+    "subtitle": "// mon parcours",
+    "title": "Expériences",
+    "present": "Présent",
+    "type_alternance": "Alternance",
+ 
+    "scipline": {
+      "role": "Développeur Fullstack",
+      "period": "2025 — Présent",
+      "d1": "Rôle clé en collaboration directe avec le lead developer",
+      "d2": "Maintenance d'un ERP commercial (Flask, PHP, JavaScript)",
+      "d3": "Participation à la refonte de l'ERP (Python, JavaScript)",
+      "d4": "Adaptation aux besoins clients et compréhension de la logique métier",
+      "d5": "Transformation de processus métiers en code (ex : système de trésorerie)"
+    },
+ 
+    "compufirst": {
+      "role": "Développeur logiciel",
+      "period": "2024 — 2025",
+      "d1": "Collaboration avec les pôles commercial et marketing",
+      "d2": "Adaptation du CRM selon les besoins métiers",
+      "d3": "Participation à la refonte du CRM (anciennement en Java 8)"
+    }
+  }
+
 }

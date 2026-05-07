@@ -1,36 +1,27 @@
 <section class="about" id="about">
 
   <div class="text">
-    <p class="section-title">// qui suis-je</p>
-    <h2>À Propos de Moi</h2>
-
-    <p>
-      Développeur full-stack en Mastère Ingénierie Logicielle, spécialisé dans
-      la conception d'applications de bout en bout — de l'architecture backend
-      au déploiement en production.
-    </p>
-    <p>
-      Passionné par le machine learning appliqué à des problèmes réels :
-      détection de signaux dans des données NASA, prédiction de séries temporelles,
-      pipelines de données. J'utilise l'IA comme levier d'exécution, pas comme béquille.
-    </p>
+    <p class="section-title">{{ 'about.subtitle' | translate }}</p>
+    <h2>{{ 'about.title' | translate }}</h2>
+    <p>{{ 'about.p1' | translate }}</p>
+    <p>{{ 'about.p2' | translate }}</p>
 
     <div class="stats">
       <div class="stat">
         <div class="number">2+</div>
-        <div class="label">Ans d'expérience</div>
+        <div class="label">{{ 'about.stat_exp' | translate }}</div>
       </div>
       <div class="stat">
         <div class="number">4+</div>
-        <div class="label">Projets livrés</div>
+        <div class="label">{{ 'about.stat_projects' | translate }}</div>
       </div>
       <div class="stat">
         <div class="number">5+</div>
-        <div class="label">Technos maîtrisées</div>
+        <div class="label">{{ 'about.stat_techs' | translate }}</div>
       </div>
       <div class="stat">
         <div class="number">100%</div>
-        <div class="label">Passion</div>
+        <div class="label">{{ 'about.stat_passion' | translate }}</div>
       </div>
     </div>
   </div>
