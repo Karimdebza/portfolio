@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [CommonModule, TranslateModule],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
+  
 })
 export class Hero {
   scrollTo(section: string) {

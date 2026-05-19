@@ -75,7 +75,10 @@
   },
   "solar": {
     "desc": "Application de prévision de production solaire basée sur les données météo. En cours de développement."
-  }
+  },
+  "puzzle": {
+  "desc": "Jeu de puzzle 2D coopératif en TypeScript. Deux joueurs sur le même clavier doivent collaborer pour résoudre 6 niveaux progressifs. Mécaniques de portes, plaques de pression et obstacles."
+}
 }
 
 }

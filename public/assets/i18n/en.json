@@ -35,7 +35,10 @@
   },
   "solar": {
     "desc": "Solar production forecasting app based on weather data. Currently in development."
-  }
+  },
+  "puzzle": {
+  "desc": "Cooperative 2D puzzle game in TypeScript. Two players on the same keyboard must collaborate to solve 6 progressive levels. Door mechanics, pressure plates and obstacles."
+}
 },
   "contact": {
     "subtitle": "// let's work together",

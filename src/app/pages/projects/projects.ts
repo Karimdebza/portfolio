@@ -34,6 +34,14 @@ export class Projects {
       tags: ['Angular', 'python', 'Weather API', 'redis'],
       github: 'https://github.com/Karimdebza/solarcast',
       live: 'https://solarcast-nine.vercel.app/'
+    },
+        {
+      icon: '🧩',
+      title: 'PuzzleGame',
+      descriptionKey: 'projects.puzzle.desc',
+      tags: ['TypeScript', 'Canvas API', 'ES Modules'],
+      github: 'https://github.com/Karimdebza/PuzzleGame',
+      live: 'https://karimdebza.github.io/PuzzleGame/'
     }
   ];
 }
