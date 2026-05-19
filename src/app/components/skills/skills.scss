@@ -1,53 +1,101 @@
 .skills {
-  padding: 6rem 2rem;
-  max-width: 900px;
+  padding: 7rem 2rem;
+  max-width: 960px;
   margin: 0 auto;
 
-  .section-title {
-    font-family: 'Fira Code', monospace;
-    color: var(--accent);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    letter-spacing: -0.8px;
+    margin-bottom: 3.5rem;
   }
 
+  /* ── Groupes ─────────────────────────────────────────────────────────── */
+  .skill-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .skill-group {
+    .group-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background: var(--border-hover);
+      }
+    }
+  }
+
+  /* ── Grille de cards ─────────────────────────────────────────────────── */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
   }
 
   .skill-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.2rem;
+    padding: 1.25rem 0.75rem;
     text-align: center;
-    transition: all 0.2s;
+    cursor: default;
+    transition: all var(--duration) var(--ease);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    position: relative;
+    overflow: hidden;
 
-    &:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px var(--accent-glow);
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform var(--duration) var(--ease);
     }
 
-    .icon { font-size: 2rem; margin-bottom: 0.5rem; }
-    .name { font-size: 0.85rem; color: var(--text-secondary); }
-  }
+    &:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+      &::before { transform: scaleX(1); }
+    }
+
     i {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
+      font-size: 2rem;
+      display: block;
+      transition: transform var(--duration) var(--ease);
+    }
 
-  .name {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-  }
+    &:hover i { transform: scale(1.1); }
 
+    .name {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
 }

@@ -1,82 +1,128 @@
 .about {
-  padding: 6rem 2rem;
-  max-width: 900px;
+  padding: 7rem 2rem;
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 420px;
+  gap: 5rem;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
   }
 
-  .section-title {
-    font-family: 'Fira Code', monospace;
-    color: var(--accent);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+  .text {
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-weight: 400;
+
+      &:last-of-type { margin-bottom: 0; }
+    }
   }
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-  }
-
-  p {
-    color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 1rem;
-  }
-
+  /* ── Stats ───────────────────────────────────────────────────────────── */
   .stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 0.875rem;
+    margin-top: 2.5rem;
 
     .stat {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.2rem;
+      padding: 1.25rem 1.5rem;
+      transition: all var(--duration) var(--ease);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, var(--accent-dim), transparent);
+        opacity: 0;
+        transition: opacity var(--duration) var(--ease);
+      }
+
+      &:hover {
+        border-color: var(--border-hover);
+        transform: translateY(-3px);
+        &::before { opacity: 1; }
+      }
 
       .number {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 700;
-        color: var(--accent);
+        font-family: var(--font-mono);
+        color: var(--accent-bright);
+        line-height: 1;
+        margin-bottom: 0.35rem;
       }
 
       .label {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
         color: var(--text-muted);
-        margin-top: 0.2rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
       }
     }
   }
 
-.avatar {
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-  position: relative;
+  /* ── Avatar ──────────────────────────────────────────────────────────── */
+  .avatar {
+    position: relative;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
+    /* Cadre décoratif décalé */
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border: 1px solid var(--border-hover);
+      border-radius: calc(var(--radius-lg) + 4px);
+      opacity: 0.4;
+    }
 
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--accent-glow), transparent);
+    /* Halo derrière */
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 70%, rgba(59,130,246,0.15), transparent 60%);
+      border-radius: var(--radius-lg);
+      z-index: 1;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s var(--ease);
+      }
+
+      &:hover img { transform: scale(1.04); }
+    }
   }
-}
 }

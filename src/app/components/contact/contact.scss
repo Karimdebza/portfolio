@@ -1,60 +1,85 @@
 .contact {
-  padding: 6rem 2rem;
-  max-width: 600px;
+  padding: 7rem 2rem 8rem;
+  max-width: 620px;
   margin: 0 auto;
   text-align: center;
 
-  .section-title {
-    font-family: 'Fira Code', monospace;
-    color: var(--accent);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
+    letter-spacing: -0.8px;
     margin-bottom: 1rem;
   }
 
-  p {
+  .contact-desc {
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
+    line-height: 1.75;
+    margin-bottom: 3rem;
   }
 
-  .links {
+  .contact-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     justify-content: center;
     flex-wrap: wrap;
+  }
 
-    a {
-      padding: 0.8rem 1.8rem;
-      border-radius: var(--radius);
-      font-weight: 500;
-      font-size: 0.9rem;
-      transition: all 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--duration) var(--ease);
+    text-decoration: none;
 
-      &.email {
-        background: var(--accent);
-        color: white;
-        &:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    svg { flex-shrink: 0; }
+
+    &.primary {
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      color: #fff;
+
+      &:hover {
+        background: var(--accent-bright);
+        border-color: var(--accent-bright);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px var(--accent-glow);
       }
 
-      &.github {
-        border: 1px solid var(--border);
-        color: var(--text-primary);
-        &:hover { border-color: var(--accent); color: var(--accent); }
-      }
-
-      &.linkedin {
-        border: 1px solid var(--border);
-        color: var(--text-primary);
-        &:hover { border-color: #0077b5; color: #0077b5; }
+      /* Feedback copié */
+      &.copied {
+        background: #16a34a;
+        border-color: #16a34a;
       }
     }
+
+    &.secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+
+      &:hover {
+        border-color: var(--border-hover);
+        color: var(--text-primary);
+        background: rgba(255,255,255,0.03);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* ── Footer ──────────────────────────────────────────────────────────── */
+  .footer-note {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
   }
 }

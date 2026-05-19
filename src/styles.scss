@@ -1,19 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #111118;
-  --bg-card: #16161f;
-  --accent: #6c63ff;
-  --accent-hover: #857dff;
-  --accent-glow: rgba(108, 99, 255, 0.15);
-  --text-primary: #f0f0f5;
-  --text-secondary: #8888aa;
-  --text-muted: #55556a;
-  --border: rgba(255, 255, 255, 0.07);
-  --radius: 12px;
-}
+  /* Couleurs */
+  --bg-primary   : #000000;
+  --bg-secondary : #0a0a0a;
+  --bg-card      : #111111;
+  --bg-card-hover: #161616;
 
+  --accent       : #3b82f6;
+  --accent-dim   : rgba(59, 130, 246, 0.08);
+  --accent-glow  : rgba(59, 130, 246, 0.15);
+  --accent-bright: #60a5fa;
+
+  --text-primary : #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted   : #52525b;
+  --text-code    : #60a5fa;
+
+  --border       : rgba(255, 255, 255, 0.08);
+  --border-hover : rgba(59, 130, 246, 0.25);
+
+  /* Typo */
+  --font-body    : 'Space Grotesk', sans-serif;
+  --font-mono    : 'JetBrains Mono', monospace;
+
+  /* Géométrie */
+  --radius-sm    : 8px;
+  --radius       : 14px;
+  --radius-lg    : 20px;
+
+  /* Transitions */
+  --ease         : cubic-bezier(0.16, 1, 0.3, 1);
+  --duration     : 0.25s;
+}
 * {
   margin: 0;
   padding: 0;
