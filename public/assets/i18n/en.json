@@ -9,8 +9,8 @@
 "about": {
   "subtitle": "// who am I",
   "title": "About Me",
-  "p1": "Full-stack developer in a Software Engineering Master's, specialized in building end-to-end applications — from backend architecture to production deployment.",
-  "p2": "Passionate about machine learning applied to real problems: signal detection in NASA data, time series prediction, data pipelines.",
+ "p1": "Full-stack developer on a work-study program, I build applications end-to-end — from database to interface. What drives me: turning an idea into something that actually runs.",
+"p2": "Curiosity has led me to unexpected places — analyzing NASA telescope data, training neural networks to detect exoplanets. When a problem is interesting, I dig in.",
   "stat_exp": "Years of experience",
   "stat_projects": "Projects delivered",
   "stat_techs": "Technologies mastered",
@@ -24,10 +24,19 @@
     "ml": "Machine Learning",
     "devops": "Data & DevOps"
   },
-  "projects": {
-    "subtitle": "// what I've built",
-    "title": "My Projects"
+"projects": {
+  "subtitle": "// what I've built",
+  "title": "My Projects",
+  "exoplanet": {
+    "desc": "ML pipeline for exoplanet detection in NASA Kepler data. BLS → CNN → physical validation architecture. Deployed on Render + Vercel."
   },
+  "fx": {
+    "desc": "Real-time forex prediction dashboard with technical indicators and ML models."
+  },
+  "solar": {
+    "desc": "Solar production forecasting app based on weather data. Currently in development."
+  }
+},
   "contact": {
     "subtitle": "// let's work together",
     "title": "Contact Me",

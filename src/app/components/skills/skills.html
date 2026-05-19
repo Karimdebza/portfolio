@@ -1,10 +1,10 @@
 <section class="skills" id="skills">
-  <p class="section-title">// ce que je maîtrise</p>
-  <h2>Ma Stack Technique</h2>
+  <p class="section-title">{{ 'skills.subtitle' | translate }}</p>
+  <h2>{{ 'skills.title' | translate }}</h2>
 
   <div class="skill-groups">
     <div class="skill-group" *ngFor="let group of skillGroups">
-      <h3 class="group-label">{{ group.category }}</h3>
+      <h3 class="group-label">{{ 'skills.' + group.categoryKey | translate }}</h3>
       <div class="grid">
         <div class="skill-card" *ngFor="let skill of group.skills">
           <i [class]="skill.icon + ' colored'"></i>

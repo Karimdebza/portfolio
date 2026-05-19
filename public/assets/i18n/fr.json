@@ -8,8 +8,8 @@
 "about": {
   "subtitle": "// qui suis-je",
   "title": "À Propos de Moi",
-  "p1": "Développeur full-stack en Mastère Ingénierie Logicielle, spécialisé dans la conception d'applications de bout en bout — de l'architecture backend au déploiement en production.",
-  "p2": "Passionné par le machine learning appliqué à des problèmes réels : détection de signaux dans des données NASA, prédiction de séries temporelles, pipelines de données.",
+ "p1": "Développeur full-stack en alternance, je construis des applications de bout en bout — de la base de données à l'interface. Ce qui me motive : transformer une idée en quelque chose qui tourne vraiment.",
+"p2": "La curiosité m'a amené à explorer des territoires inattendus — analyser des données de télescopes NASA, entraîner des réseaux de neurones pour détecter des exoplanètes. Quand un problème est intéressant, je creuse.",
   "stat_exp": "Ans d'expérience",
   "stat_projects": "Projets livrés",
   "stat_techs": "Technos maîtrisées",
@@ -23,10 +23,7 @@
     "ml": "Machine Learning",
     "devops": "Data & DevOps"
   },
-  "projects": {
-    "subtitle": "// ce que j'ai construit",
-    "title": "Mes Projets"
-  },
+
   "contact": {
     "subtitle": "// travaillons ensemble",
     "title": "Me Contacter",
@@ -66,6 +63,19 @@
       "d2": "Adaptation du CRM selon les besoins métiers",
       "d3": "Participation à la refonte du CRM (anciennement en Java 8)"
     }
+  },
+  "projects": {
+  "subtitle": "// ce que j'ai construit",
+  "title": "Mes Projets",
+  "exoplanet": {
+    "desc": "Pipeline ML de détection d'exoplanètes dans les données NASA Kepler. Architecture BLS → CNN → validation physique. Déployé sur Render + Vercel."
+  },
+  "fx": {
+    "desc": "Dashboard de prédiction de taux de change en temps réel. Visualisation forex avec indicateurs techniques et modèles ML."
+  },
+  "solar": {
+    "desc": "Application de prévision de production solaire basée sur les données météo. En cours de développement."
   }
+}
 
 }
